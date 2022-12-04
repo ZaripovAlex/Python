@@ -14,3 +14,16 @@ def f(sp: list, number: int) -> list:
 
 lst1 = ['23232323', 'dfsdfgsdg564654', 'sdfg34', '3423424', '9878', 3455, 'df5']
 print(*f(lst1, 1))
+
+
+# def find_num(list: list, num):
+#     for i in range(len(list)):
+#         if num in list[i]:
+#             print(list[i])
+
+
+# lst = ['213213', 'dsf653', 'dsf', 'fdh76']
+# num = input("Write number: ")
+
+
+# find_num(lst, num)

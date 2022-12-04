@@ -1,13 +1,16 @@
 # Реализуйте алгоритм случайных чисел без использования встроенного генератора псевдослучайных чисел
 
-
-
 from datetime import datetime
 
-def get_random_number(n):
-    now = datetime.now()
-    random_number = now.time().microsecond 
-    return random_number % 10**n
+def random_number(minn: int, maxx: int):
+    dt = (datetime.now().time().microsecond)
+    now = str(dt)
+    print(now)
+    rnd = float(now[::-1][:3:])/1000
+
+    # Первый срез [::-1] Переворачивает строку. Второй [:3:] берет первые три символа перевенутой строки
+    print(rnd)
+    return int(minn + rnd*(maxx-minn))
 
 
-print(get_random_number(3))
+print(random_number(10, 13))
